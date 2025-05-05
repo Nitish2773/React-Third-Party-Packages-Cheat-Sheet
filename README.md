@@ -1,5 +1,3 @@
-Here is the complete cheat sheet with all the images included:
-
 # Third-Party Packages Cheat Sheet
 
 This cheat sheet provides a quick reference for using third-party packages in React applications. It covers the advantages, selection criteria, and examples of popular third-party packages such as `react-player`, `recharts`, `react-chrono`, `react-slick`, and `reactjs-popup`.
