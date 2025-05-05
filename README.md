@@ -1,3 +1,5 @@
+Here is the complete cheat sheet with all the images included:
+
 # Third-Party Packages Cheat Sheet
 
 This cheat sheet provides a quick reference for using third-party packages in React applications. It covers the advantages, selection criteria, and examples of popular third-party packages such as `react-player`, `recharts`, `react-chrono`, `react-slick`, and `reactjs-popup`.
@@ -192,6 +194,33 @@ export default App;
 
 ![Chrono Example](https://assets.ccbp.in/frontend/content/react-js/react-chrono-timeline-items-prop.png)
 
+#### Custom Content Example
+```jsx
+import { Chrono } from 'react-chrono';
+
+const items = [{ title: '2018' }, { title: '2019' }];
+
+const App = () => (
+  <div className="chrono-container">
+    <Chrono mode="VERTICAL" items={items}>
+      <img
+        src="https://assets.ccbp.in/frontend/react-js/csk-logo-img.png"
+        className="image"
+        alt="chennai-super-kings"
+      />
+      <div>
+        <h1>Mumbai Indians</h1>
+        <p>IPL Team winner for the year 2019 is Mumbai Indians.</p>
+      </div>
+    </Chrono>
+  </div>
+);
+
+export default App;
+```
+
+![Custom Content Example](https://assets.ccbp.in/frontend/content/react-js/react-chrono-timeline-with-title.png)
+
 ### Third-Party Package: `react-slick`
 
 `react-slick` is a third-party package that provides a React component `Slider` to add a carousel to your application.
@@ -291,6 +320,47 @@ export default ReactPopUp;
 ```
 
 ![React Popup Example](https://assets.ccbp.in/frontend/content/react-js/popup-with-close.gif)
+
+#### Position Prop Example
+```jsx
+const ReactPopUp = () => (
+  <div className="popup-container">
+    <Popup
+      trigger={<button type="button" className="trigger-button">Trigger</button>}
+      position="bottom left"
+    >
+      <p>React is a popular and widely used programming language</p>
+    </Popup>
+  </div>
+);
+
+export default ReactPopUp;
+```
+
+![Position Prop Example](https://assets.ccbp.in/frontend/content/react-js/popup-with-position.gif)
+
+#### Overlay Style Prop Example
+```jsx
+const overlayStyles = {
+  backgroundColor: '#ffff',
+};
+
+const ReactPopUp = () => (
+  <div className="popup-container">
+    <Popup
+      modal
+      trigger={<button type="button" className="trigger-button">Trigger</button>}
+      overlayStyle={overlayStyles}
+    >
+      <p>React is a popular and widely used programming language</p>
+    </Popup>
+  </div>
+);
+
+export default ReactPopUp;
+```
+
+![Overlay Style Prop Example](https://assets.ccbp.in/frontend/content/react-js/popup-overlay-styles.gif)
 
 ## References
 
