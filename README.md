@@ -365,5 +365,5 @@ export default ReactPopUp;
 - [`react-player` Documentation](https://www.npmjs.com/package/react-player)
 - [`recharts` Documentation](https://recharts.org/en-US)
 - [`react-chrono` Documentation](https://www.npmjs.com/package/react-chrono)
-- [`react-slick` Documentation](https://react-slick.neostack.com/docs/get-started)i.com/component-api)
-- [`reactjs-popup` Documentation](https://react-popup.elaziz
+- [`react-slick` Documentation](https://react-slick.neostack.com/docs/get-started)
+- [`reactjs-popup` Documentation](https://react-popup.elazizi.com/component-api/)
